@@ -8,31 +8,41 @@
 body{
 font-family: Arial;
 margin:0;
-background:#f5f5f5;
+background:#f2f2f2;
 }
 
 header{
-background:black;
+background:#111;
 color:white;
 padding:15px;
 text-align:center;
-font-size:24px;
+font-size:26px;
+}
+
+.search{
+text-align:center;
+padding:20px;
+}
+
+.search input{
+width:60%;
+padding:10px;
+font-size:16px;
 }
 
 .products{
-display:flex;
-justify-content:center;
-gap:30px;
-padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:30px;
 }
 
 .card{
 background:white;
-padding:20px;
+padding:15px;
 border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+box-shadow:0 0 10px rgba(0,0,0,0.15);
 text-align:center;
-width:200px;
 }
 
 .card img{
@@ -40,13 +50,19 @@ width:100%;
 border-radius:10px;
 }
 
+.price{
+color:green;
+font-size:18px;
+}
+
 button{
-background:black;
+background:#111;
 color:white;
-padding:10px 20px;
 border:none;
-border-radius:5px;
+padding:10px 15px;
+margin-top:10px;
 cursor:pointer;
+border-radius:5px;
 }
 
 button:hover{
@@ -54,10 +70,10 @@ background:red;
 }
 
 footer{
+background:#111;
+color:white;
 text-align:center;
 padding:15px;
-background:black;
-color:white;
 }
 
 </style>
@@ -70,27 +86,37 @@ color:white;
 Priyanshu Fashion Store
 </header>
 
+<div class="search">
+<input type="text" placeholder="Search product...">
+</div>
+
 <div class="products">
 
 <div class="card">
 <img src="https://via.placeholder.com/200">
-<h3>Stylish Watch</h3>
-<p>₹999</p>
-<button>Buy Now</button>
+<h3>Luxury Watch</h3>
+<p class="price">₹999</p>
+<a href="https://wa.me/918102961267">
+<button>Order on WhatsApp</button>
+</a>
 </div>
 
 <div class="card">
 <img src="https://via.placeholder.com/200">
-<h3>Fashion T-Shirt</h3>
-<p>₹499</p>
-<button>Buy Now</button>
+<h3>Cool T-Shirt</h3>
+<p class="price">₹499</p>
+<a href="https://wa.me/918102961267">
+<button>Order on WhatsApp</button>
+</a>
 </div>
 
 <div class="card">
 <img src="https://via.placeholder.com/200">
-<h3>Cool Shoes</h3>
-<p>₹1499</p>
-<button>Buy Now</button>
+<h3>Running Shoes</h3>
+<p class="price">₹1499</p>
+<a href="https://wa.me/918102961267">
+<button>Order on WhatsApp</button>
+</a>
 </div>
 
 </div>
